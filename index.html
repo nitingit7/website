@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "device=device-width, initial-scale=1,0">
+        <title>Fist sample javascript</title>
+        <script src = "js_1.js"></script>
+        <style>
+            .content{
+                padding: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+            .float_left{
+                display: inline-block;
+                text-align: center;
+                width: 32%;
+                vertical-align: middle;
+            }
+            .centre{
+                display: block;
+                text-align: center;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <audio id="myAudio">
+            <source src="Yamete Kudasai Ringtone.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="myAudio2">
+            <source src="ahh!! sound effect.mp3" type="audio/mpeg">
+        </audio>
+        <div class = "content">
+            <p id = "para">In order to change the text content please click on the below button</p>
+            <div class="centre">
+                <button type="button" onclick="myFunction(); playSound();">Click Me</button><br>
+            </div>
+            <div class="float_left">
+                <button onclick="tunroffLight()">Turn of the Light</button>
+            </div>
+            <div class="float_left">
+                <img id="imageofBulb" src="bulboff.jpeg" alt="OffBulb" width="150">
+            </div>
+            <div class="float_left">
+                <button onclick="turnonLight(); playsound2();">Turn on Light</button>
+            </div>
+            <div class="centre">
+                <form onsubmit="return false;">
+                    <label for="numbera">Enter number a: </label>
+                    <input type="text" id="numbera"><br>
+                    <label for="numberb">Enter number b</label>
+                    <input type="text" id="numberb"><br>
+                    <button onclick="addition()">Addition</button>
+                    <p id="result"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
